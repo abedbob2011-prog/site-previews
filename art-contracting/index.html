@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ART Contracting Co. Ltd | Website preview concept</title><meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF1F2;      /* drawing paper */
+  --sheet:#FFFFFF;
+  --ink:#14242E;        /* blueprint slate */
+  --steel:#5C7482;
+  --line:#C9CFD1;       /* concrete */
+  --signal:#F2B90C;     /* plant yellow */
+  --display:"Barlow Condensed","IBM Plex Sans Arabic","Arial Narrow",sans-serif;
+  --body:"Barlow","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+html[lang="ar"] body{font-family:"IBM Plex Sans Arabic","Barlow",system-ui,sans-serif;line-height:1.8}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] .wordmark{font-family:"IBM Plex Sans Arabic",sans-serif;letter-spacing:0;line-height:1.3}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+
+/* preview notice */
+.notice{background:var(--signal);color:var(--ink);font-size:14px;font-weight:500;text-align:center;padding:8px 16px}
+
+/* header */
+.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;gap:28px;min-height:68px}
+.wordmark{font-family:var(--display);font-weight:700;font-size:28px;letter-spacing:.04em;text-decoration:none;line-height:1}
+.wordmark small{display:block;font-family:var(--body);font-weight:400;font-size:12px;letter-spacing:0;color:#B9C6CD;margin-top:3px}
+.nav{display:flex;gap:24px;margin-inline-start:auto}
+.nav a{text-decoration:none;font-size:15px;color:#DCE4E8;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-bottom-color:var(--signal);color:#fff}
+.lang{background:none;border:1px solid #4A5E69;color:#fff;font:inherit;font-size:14px;padding:6px 12px;cursor:pointer;border-radius:2px}
+.lang:hover{border-color:var(--signal)}
+.call{background:var(--signal);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;padding:9px 16px;border-radius:2px;white-space:nowrap}
+.call span{direction:ltr;unicode-bidi:isolate}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:72px 0 0;overflow:hidden}
+.hero h1{font-family:var(--display);font-weight:600;font-size:clamp(44px,7.4vw,104px);line-height:.96;letter-spacing:-.005em;margin:0;max-width:13ch;text-wrap:balance}
+html[lang="ar"] .hero h1{font-size:clamp(36px,5.6vw,76px);max-width:16ch;font-weight:700}
+.hero p{font-size:clamp(17px,1.5vw,20px);max-width:56ch;color:#CBD6DC;margin:28px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;font:inherit;font-weight:600;font-size:16px;text-decoration:none;padding:13px 22px;border-radius:2px;border:2px solid var(--signal);cursor:pointer}
+.btn.solid{background:var(--signal);color:var(--ink)}
+.btn.ghost{background:transparent;color:#fff;border-color:#4A5E69}
+.btn.ghost:hover{border-color:#fff}
+.elevation{display:block;width:100%;height:auto;margin-top:56px}
+.elevation *{fill:none;stroke:#8FA5B1;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.elevation .hi{stroke:var(--signal);stroke-width:2}
+.elevation .ground{stroke:#fff;stroke-width:2}
+.elevation text{fill:#8FA5B1;stroke:none;font-family:var(--body);font-size:13px}
+.elevation [pathLength]{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.1s ease-out forwards;animation-delay:calc(var(--i,0)*.14s)}
+@keyframes draw{to{stroke-dashoffset:0}}
+html[dir="rtl"] .elevation{transform:scaleX(-1)}
+html[dir="rtl"] .elevation text{display:none}
+@media (prefers-reduced-motion:reduce){.elevation [pathLength]{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+
+/* facts strip */
+.facts{background:var(--sheet);border-bottom:1px solid var(--line)}
+.facts dl{display:grid;grid-template-columns:repeat(4,1fr);margin:0}
+
+.facts dl>div{padding:22px 0;padding-inline-end:20px}
+.facts dl>div + div{border-inline-start:1px solid var(--line);padding-inline-start:24px}
+.facts dt{font-size:14px;color:var(--steel)}
+.facts dd{margin:2px 0 0;font-family:var(--display);font-weight:600;font-size:26px;line-height:1.15}
+html[lang="ar"] .facts dd{font-family:"IBM Plex Sans Arabic",sans-serif;font-size:20px}
+
+/* sections */
+.band{padding:88px 0}
+.band h2{font-family:var(--display);font-weight:600;font-size:clamp(34px,4.2vw,56px);line-height:1.02;margin:0 0 14px;max-width:20ch}
+.lead{max-width:62ch;color:#3A4E59;margin:0 0 44px}
+
+/* process: a real sequence, so it is numbered */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);counter-reset:s;border-top:3px solid var(--ink)}
+.steps li{counter-increment:s;padding:22px 22px 8px 0;position:relative}
+html[dir="rtl"] .steps li{padding:22px 0 8px 22px}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;font-size:54px;line-height:1;color:var(--ink);display:block;margin-bottom:10px}
+.steps li::after{content:"";position:absolute;top:-9px;inset-inline-start:0;width:15px;height:15px;background:var(--signal);border:3px solid var(--ink)}
+.steps h3{font-size:20px;margin:0 0 6px;font-weight:600}
+.steps p{margin:0;color:#3A4E59;font-size:16px}
+
+.methods{margin-top:64px;display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:start}
+.methods h3{font-family:var(--display);font-weight:600;font-size:30px;line-height:1.1;margin:0}
+html[lang="ar"] .methods h3{font-size:24px}
+.methods ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.methods li{padding:14px 0;border-bottom:1px solid var(--line)}
+.methods b{display:block;font-weight:600}
+.methods span{color:#3A4E59;font-size:16px}
+
+/* projects */
+.projects{background:var(--sheet);border-block:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.job{margin:0}
+.job .ph{aspect-ratio:4/3;background:repeating-linear-gradient(135deg,#DDE3E6 0 10px,#E8ECEE 10px 20px);overflow:hidden}
+.job img{width:100%;height:100%;object-fit:cover}
+.job figcaption{display:flex;justify-content:space-between;gap:12px;padding:12px 0 0;font-weight:600}
+.job figcaption span{font-weight:400;color:var(--steel);font-size:15px}
+.more{margin:36px 0 0;color:#3A4E59;max-width:70ch}
+
+/* clients */
+.clients ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.clients li{background:var(--sheet);border:1px solid var(--line);padding:9px 16px;font-weight:500;font-size:16px}
+
+/* safety */
+.safety{background:var(--ink);color:#fff}
+.safety .lead{color:#CBD6DC}
+.safety .cols{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.stop{border:3px solid var(--signal);padding:26px 28px}
+.stop strong{display:block;font-family:var(--display);font-weight:700;font-size:clamp(40px,5vw,68px);line-height:.95;color:var(--signal)}
+html[lang="ar"] .stop strong{font-family:"IBM Plex Sans Arabic",sans-serif;font-size:clamp(30px,3.6vw,46px);line-height:1.25}
+.stop p{margin:14px 0 0;color:#CBD6DC;font-size:16px}
+.rules{list-style:none;margin:0;padding:0}
+.rules li{padding:16px 0;border-bottom:1px solid #2F434E}
+.rules li:first-child{border-top:1px solid #2F434E}
+.rules b{display:block;font-weight:600}
+.rules span{color:#B9C6CD;font-size:16px}
+
+/* about */
+.about .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.about p{margin:0 0 16px;max-width:60ch}
+.pair{border-inline-start:3px solid var(--signal);padding-inline-start:20px;margin-bottom:26px}
+.pair h3{margin:0 0 4px;font-size:19px;font-weight:600}
+.pair p{margin:0;color:#3A4E59}
+.values{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;font-weight:500}
+.values li::before{content:"";display:inline-block;width:9px;height:9px;background:var(--ink);margin-inline-end:10px}
+
+/* contact */
+.contact{background:var(--sheet);border-top:1px solid var(--line)}
+.contact .cols{display:grid;grid-template-columns:5fr 7fr;gap:56px}
+.details{margin:0}
+.details div{padding:14px 0;border-bottom:1px solid var(--line)}
+.details dt{font-size:14px;color:var(--steel)}
+.details dd{margin:2px 0 0;font-size:19px;font-weight:500}
+.details a{text-decoration-color:var(--signal);text-decoration-thickness:2px;text-underline-offset:3px}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+form{display:grid;gap:16px}
+label{display:grid;gap:6px;font-size:15px;font-weight:500}
+input,select,textarea{font:inherit;padding:12px 14px;border:1px solid #9FAEB6;border-radius:2px;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:130px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hint{font-size:14px;color:var(--steel);margin:0}
+.send{justify-self:start;background:var(--ink);color:#fff;border-color:var(--ink)}
+.send:hover{background:#0C1920}
+
+footer{background:var(--ink);color:#B9C6CD;font-size:15px;padding:30px 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer a{color:#fff}
+
+@media (max-width:900px){
+  .nav{display:none}
+  .lang{margin-inline-start:auto}
+  .facts dl{grid-template-columns:1fr 1fr}
+  .facts dl>div:nth-child(3){border-inline-start:0;padding-inline-start:0}
+  .facts dl>div:nth-child(n+3){border-top:1px solid var(--line)}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps li::after{display:none}
+  .methods,.safety .cols,.about .cols,.contact .cols{grid-template-columns:1fr;gap:32px}
+  .grid{grid-template-columns:1fr 1fr}
+  .band{padding:60px 0}
+}
+@media (max-width:560px){
+  .wrap{padding:0 18px}
+  .top .wrap{gap:10px;min-height:60px}
+  .wordmark{font-size:23px}
+  .wordmark small{display:none}
+  .call{padding:8px 11px;font-size:14px}
+  .hero{padding-top:44px}
+  .steps,.grid,.methods ul,.two,.values{grid-template-columns:1fr}
+  .facts dd{font-size:21px}
+}
+
+.svc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;border-top:3px solid var(--ink)}
+.svc li{padding:18px 0;border-bottom:1px solid var(--line)}
+.svc b{display:block;font-weight:600;font-size:19px}
+.svc span{color:#3A4E59;font-size:16px}
+.about p{font-size:19px}
+.btn.solid,.call,.notice{color:var(--on)}
+@media (max-width:900px){.svc{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.svc{grid-template-columns:1fr}}
+:root{--ink:#1E3324;--signal:#C9E265;--paper:#F2F4EC;--on:#1E3324}</style></head><body>
+<div class="notice" data-ar="نموذج تصميم مقترح لـشركة آرت للمقاولات. هذا ليس الموقع الرسمي.">Design preview prepared for ART Contracting Co. Ltd. This is a concept, not the company&#x27;s official website.</div>
+<header class="top"><div class="wrap">
+<a class="wordmark" href="#top"><span data-ar="آرت">ART</span><small data-ar="للمقاولات">Contracting Co. Ltd</small></a>
+<nav class="nav" aria-label="Main"><a href="#services" data-ar="خدماتنا">Services</a><a href="#why" data-ar="لماذا نحن">Why us</a><a href="#about" data-ar="من نحن">About</a><a href="#contact" data-ar="تواصل معنا">Contact</a></nav>
+<button class="lang" id="lang" type="button" aria-label="Switch language">العربية</button>
+<a class="call" href="tel:+966114850093"><span>+966 11 485 0093</span></a></div></header>
+<main id="top"><section class="hero"><div class="wrap"><h1 data-ar="نصمّم وننفّذ المساحات الخضراء في المملكة">Landscapes designed and built for Saudi spaces</h1><p data-ar="آرت للمقاولات تصمّم وتنفّذ تنسيق الحدائق الخارجية والداخلية بخبرة تقارب 30 عامًا.">ART Contracting designs and executes outdoor and indoor landscapes, drawing on about 30 years of experience.</p>
+<div class="actions"><a href="#contact" class="btn solid" data-ar="اطلب استشارة">Request a consultation</a><a class="btn ghost" href="#services" data-ar="تعرّف على خدماتنا">See what we do</a></div></div>
+<svg class="elevation" viewBox="0 0 1200 250" role="img" aria-label="Line illustration"><path pathLength="1" class="hi" style="--i:1" d="M140 230v-110M140 120m-46 0a46 46 0 1 0 92 0a46 46 0 1 0-92 0"/><path pathLength="1" style="--i:2" d="M300 230v-80M300 150m-34 0a34 34 0 1 0 68 0a34 34 0 1 0-68 0"/><path pathLength="1" class="hi" style="--i:3" d="M930 230v-120M930 110m-50 0a50 50 0 1 0 100 0a50 50 0 1 0-100 0"/><path pathLength="1" style="--i:4" d="M1090 230v-84M1090 146m-36 0a36 36 0 1 0 72 0a36 36 0 1 0-72 0"/><path pathLength="1" style="--i:5" d="M430 230v-130h360v130M430 120h360M470 100v130M750 100v130M410 100h400"/><path pathLength="1" style="--i:6" d="M500 230q20-50 40 0q20-50 40 0q20-50 40 0q20-50 40 0q20-50 40 0"/><path pathLength="1" class="ground" style="--i:0" d="M0 230h1200"/></svg></section>
+<section class="facts" aria-label="Key facts"><div class="wrap"><dl><div><dt data-ar="الخبرة">Experience</dt><dd data-ar="نحو 30 عامًا">About 30 years</dd></div><div><dt data-ar="عملنا">We do</dt><dd data-ar="تصميم وتنفيذ">Design and execution</dd></div><div><dt data-ar="المساحات">Spaces</dt><dd data-ar="خارجية وداخلية">Outdoor and indoor</dd></div><div><dt data-ar="المقر">Based in</dt><dd data-ar="الرياض، المملكة العربية السعودية">Riyadh, Saudi Arabia</dd></div></dl></div></section>
+<section class="band" id="services"><div class="wrap"><h2 data-ar="كل ما تحتاجه المساحة الخضراء">Everything a landscape needs</h2><p class="lead" data-ar="من الزراعة إلى أنظمة المياه والضباب، بفريق واحد.">From planting to water and fog systems, delivered by one team.</p><ul class="svc"><li><b data-ar="الزراعة الخارجية">Outdoor planting</b></li><li><b data-ar="الزراعة الداخلية">Indoor planting</b></li><li><b data-ar="الجدران الخضراء">Green wall systems</b></li><li><b data-ar="الأعمال الإنشائية للحدائق">Hardscape features</b></li><li><b data-ar="العناصر المائية">Water features</b></li><li><b data-ar="أنظمة الضباب">Fog systems</b></li></ul></div></section>
+<section class="band safety" id="why"><div class="wrap"><h2 data-ar="كيف يكتمل المشروع">How a project comes together</h2><p class="lead" data-ar="أربع خطوات من أول زيارة إلى عرض جاهز لاعتمادك.">Four steps from the first visit to a proposal you can approve.</p>
+<div class="cols"><div class="stop"><strong data-ar="نحو 30 عامًا">About 30 years</strong><p data-ar="ثلاثة عقود من أعمال تنسيق الحدائق في المملكة.">Three decades of landscape work across the Kingdom.</p></div><ul class="rules"><li><b data-ar="1. الاستشارة ودراسة الموقع">1. Consultation and site analysis</b><span data-ar="نزور الموقع ونستمع إليك وندرسه.">We visit, listen and study the site.</span></li><li><b data-ar="2. تطوير الفكرة">2. Concept development</b><span data-ar="تصوّر أولي للمساحة.">A first direction for the space.</span></li><li><b data-ar="3. التصميم التفصيلي">3. Detailed design</b><span data-ar="نحدّد النباتات والمواد والأنظمة.">Plants, materials and systems are specified.</span></li><li><b data-ar="4. التصميم النهائي والعرض">4. Final design and proposal</b><span data-ar="عرض متكامل جاهز للتنفيذ.">A complete proposal ready to build.</span></li></ul></div></div></section>
+<section class="band clients"><div class="wrap"><h2 data-ar="عملاء عملنا معهم">Clients we have worked with</h2><p class="lead" data-ar="جهات رائدة في المملكة.">Leading organisations in the Kingdom.</p><ul><li data-ar="أرامكو">Aramco</li><li data-ar="سابك">SABIC</li><li data-ar="STC">STC</li><li data-ar="رولكس">Rolex</li><li data-ar="بن لادن">Binladin</li></ul></div></section>
+<section class="band about projects" id="about"><div class="wrap"><h2 data-ar="عن آرت للمقاولات">About ART Contracting</h2><p data-ar="شركة آرت للمقاولات متخصصة في تصميم وتنفيذ تنسيق الحدائق للمساحات الخارجية والداخلية في المملكة.">ART Contracting Co. Ltd specialises in landscape design and execution for outdoor and indoor spaces in Saudi Arabia.</p><p data-ar="بخبرة تقارب 30 عامًا، ينفّذ الفريق الزراعة والجدران الخضراء والأعمال الإنشائية والعناصر المائية وأنظمة الضباب.">With about 30 years of experience, the team handles planting, green walls, hardscape, water features and fog systems.</p></div></section>
+<section class="band contact" id="contact"><div class="wrap"><h2 data-ar="حدّثنا عن مساحتك">Tell us about your space</h2><p class="lead" data-ar="أرسل التفاصيل وسنرتّب زيارة للموقع.">Send the details and we will arrange a site visit.</p>
+<div class="cols"><dl class="details"><div><dt data-ar="الهاتف">Phone</dt><dd><a class="ltr" href="tel:+966114850093">+966 11 485 0093</a></dd></div><div><dt data-ar="البريد الإلكتروني">Email</dt><dd><a class="ltr" href="mailto:info@artcontracting.com">info@artcontracting.com</a></dd></div><div><dt data-ar="العنوان">Address</dt><dd data-ar="الرياض، المملكة العربية السعودية">Riyadh, Saudi Arabia</dd></div></dl>
+<form id="enquiry"><div class="two"><label><span data-ar="الاسم">Your name</span><input name="name" required autocomplete="name"></label><label><span data-ar="الشركة (اختياري)">Company (optional)</span><input name="company" autocomplete="organization"></label></div>
+<div class="two"><label><span data-ar="رقم الجوال">Phone</span><input name="phone" type="tel" autocomplete="tel"></label><label><span data-ar="نوع الطلب">I need</span><select name="type"><option data-ar="الزراعة الخارجية">Outdoor planting</option><option data-ar="الزراعة الداخلية">Indoor planting</option><option data-ar="الجدران الخضراء">Green wall systems</option><option data-ar="الأعمال الإنشائية للحدائق">Hardscape features</option><option data-ar="العناصر المائية">Water features</option><option data-ar="أنظمة الضباب">Fog systems</option></select></label></div>
+<label><span data-ar="التفاصيل">Details</span><textarea name="details" required></textarea></label>
+<button class="btn send" type="submit" data-ar="أرسل الطلب">Send request</button><p class="hint" data-ar="يفتح تطبيق البريد لديك برسالة جاهزة للإرسال.">Opens your email app with the message ready to send.</p></form></div></div></section></main>
+<footer><div class="wrap"><span>© 2026 ART Contracting Co. Ltd</span><span data-ar="نموذج تصميم مقترح، وليس الموقع الرسمي.">Preview concept, not the official website.</span></div></footer>
+<script>
+(function(){
+  var nodes = document.querySelectorAll('[data-ar]');
+  nodes.forEach(function(n){ n.dataset.en = n.textContent; });
+  var btn = document.getElementById('lang');
+  function set(lang){
+    var ar = lang === 'ar';
+    document.documentElement.lang = ar ? 'ar' : 'en';
+    document.documentElement.dir = ar ? 'rtl' : 'ltr';
+    nodes.forEach(function(n){ n.textContent = ar ? n.dataset.ar : n.dataset.en; });
+    btn.textContent = ar ? 'English' : 'العربية';
+  }
+  btn.addEventListener('click', function(){
+    set(document.documentElement.lang === 'ar' ? 'en' : 'ar');
+  });
+  if (/[?&]lang=ar\b/.test(location.search)) set('ar');
+  document.getElementById('enquiry').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = e.target;
+    var body = 'Name: ' + f.name.value + '\nCompany: ' + f.company.value + '\nPhone: ' + f.phone.value +
+      '\nProject type: ' + f.type.value + '\n\n' + f.details.value;
+    location.href = 'mailto:info@artcontracting.com?subject=' + encodeURIComponent('Project enquiry from ' + f.name.value) +
+      '&body=' + encodeURIComponent(body);
+  });
+})();
+</script></body></html>
